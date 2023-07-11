@@ -1,0 +1,42 @@
+\documentclass {article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amssymb,amsthm,amsmath,amsfonts}
+\title{Tarea formulario}
+\author{Jeanmarco Alarcon}
+\date{Julio 2023}
+\begin{document}%---------
+\maketitle
+    \section{Rendimiento de una Maquina}                   
+        \begin{gather*}
+            \mathbf{ P_{x} =\frac{1}{TdE_{x}} }
+        \end{gather*}
+        \textbf{Donde TdE es el tiempo de ejecucion de un programa} 
+        
+        \begin{gather}
+            \mathbf{\frac{TdE_{y}}{TdE_{x}}=n}
+        \end{gather}
+        \textbf{Donde n representa la difrencia de rendmiento} 
+
+    \section{Rendimiento de la CPU}
+
+        \begin{gather}
+            \mathbf{Tiempo CPU=\frac{Ciclos CPU}{Frecuencia CPU} }
+        \end{gather}
+    \section{Rendimiento de instrucciones}  
+
+        \begin{gather}
+            \mathbf{Ciclos CPU=I*CPI}
+        \end{gather}
+        
+    \section{Ecuacion clasica del rendimiento de CPU} 
+        \begin{gather}
+            \mathbf{TiempoCPU=\frac{I*CPI}{FrecuenciaCPU}}
+        \end{gather}
+
+    \section{Ley de Amdahl} 
+        
+        \begin{gather}
+            \textbf{TdE por la mejora}=\frac{TdeMejorada}{CantidadMejora}+\textbf{TdE no afectado}
+        \end{gather}
+        
+\end{document}
