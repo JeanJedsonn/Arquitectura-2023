@@ -2,7 +2,7 @@
 
 ##Alumnos:
 - Jeanmarco Alarcon. CI:27117926
-- Leonardo Moreno 28330952
+- Leonardo Moreno. CI:28330952
 ## Propuesta de computador para renderizado de video.
 ###Breve historia sobre la evolucion del campo.
 >Los primeros equipos para este fin empezaron a surgir en los 70's , como es de imaginarse , la potencia y las cosas de las que eran capaces dejaban mucho que desear. Para los 80's las computadoras destinadas a renderizado mejoraron en terminos de potencia , y la aparicion de las tarjetas graficas ayudaron a impulsar esto. Ya en los 90 la potencia de estos equipos aumento significativamente en todos los aspectos , y los resultados mas importantes de estos fueron las peliculas Jurassic park (1993) y especialmente ToyStory (1995) el cual fue un logro en su epoca , tomando 800mil horas maquina el rederizar todos los frame necesarios para hacer los 77minutos de pelicula , aun asi Pixar solo lograba renderizar menos de 30s por dia.
