@@ -1,6 +1,9 @@
+//Jeanmarco Alarcon CI 27117926
+//Programacion 2 07/11/2023 , Naguanagua
+
 #ifndef LISTA
 #define LISTA
-//FIX: Intercambiar nodos , no valores
+
 //---------------------------------------------------------------------------------------------------------------//
 //                                               Clase Nodo                                                      //
 //---------------------------------------------------------------------------------------------------------------//
@@ -32,15 +35,15 @@ class Nodo{
 
 template <class Tipo1>
 class Lista{
-    protected:
-        Nodo<Tipo1>* iterar(int pos);
-
     private:
         int longitud;                               //la longitud solo puede ser un entero
         Nodo<Tipo1>* nodoAncla;                     //los nodos siempre son nodos , aun que contengan otras cosas
         Nodo<Tipo1>* nodoFinal;
 
+        //metodo privado
+        Nodo<Tipo1>* iterar(int pos);
     public:
+
         //constructores:
             Lista();
             Lista(Lista<Tipo1> &in);                        //recibe la direccion de la lista
@@ -48,7 +51,7 @@ class Lista{
         //consultores:            
             bool esVacia();
             int getLongitud();
-            Tipo1 consultar(int pos);                      //si se fuese una lista de listas , debe retornarse la referencia al objeto
+            Tipo1& consultar(int pos);                      //si se fuese una lista de listas , debe retornarse la referencia al objeto
             int buscar(Tipo1 objetivo);
            
         //modificadores:
@@ -78,7 +81,6 @@ template <class Tipo1>
 Nodo<Tipo1>::Nodo()
 {                                     //constructor por defecto
     this->nodoSig=NULL;
-    this->valor=0;
 }      
 
 template <class Tipo1>
@@ -179,10 +181,9 @@ int Lista<Tipo1>::getLongitud()
 }
 
 template <class Tipo1>
-Tipo1 Lista<Tipo1>::consultar(int pos)
+Tipo1& Lista<Tipo1>::consultar(int pos)
 {
     Nodo<Tipo1>* aux;                   //aux recorre los nodos, por defecto vale 0
-    Tipo1 error;
 
     if (pos>0 && pos<=this->longitud)   //se verifica que la consulta este en rango
     {
@@ -198,10 +199,8 @@ Tipo1 Lista<Tipo1>::consultar(int pos)
         {
             aux=iterar(pos);
         }
-        return aux->valor;                  //se retorna una referencia al valor contenido en el nodo
     }
-    
-    return error;
+    return aux->valor;                  //se retorna una referencia al valor contenido en el nodo
 }
 
 template <class Tipo1>
