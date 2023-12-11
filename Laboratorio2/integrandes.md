@@ -1,3 +1,3 @@
 Integrantes: 
-Jeanmarco Alarcon 27117926 
 Alejandro Cerpa 30334870
+Jeanmarco Alarcon 27117926 
